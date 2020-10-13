@@ -1,5 +1,6 @@
-package me.ivan.passwordmanagerbackend
+package me.ivan.passwordmanagerbackend.services
 
+import me.ivan.passwordmanagerbackend.repositories.PasswordRepository
 import me.ivan.passwordmanagerbackend.models.PasswordModel
 import org.springframework.stereotype.Service
 
@@ -16,5 +17,17 @@ class PasswordService(var passwordRepository: PasswordRepository) {
 
     fun add(passwordModel: PasswordModel): PasswordModel {
         return passwordRepository.save(passwordModel)
+    }
+
+    fun findByUrl(url: String): List<PasswordModel> {
+        return passwordRepository.findByUrlContains(url)
+    }
+
+    fun findByUsername(username: String): List<PasswordModel> {
+        return passwordRepository.findByUsernameContains(username)
+    }
+
+    fun findByPassword(password: String): List<PasswordModel> {
+        return passwordRepository.findByPasswordContains(password)
     }
 }

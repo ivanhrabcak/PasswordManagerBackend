@@ -14,13 +14,16 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
+	maven(url = "https://jitpack.io")
 }
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.h2database:h2")
 	implementation("org.postgresql:postgresql")
-	implementation("org.postgresql:postgresql")
+	implementation("com.github.PhilJay:JWT:1.1.5")
+//	implementation('com.github.PhilJay:JWT:1.1.5')
+//	implementation("org.postgresql:postgresql")
 //	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 //	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-web")
