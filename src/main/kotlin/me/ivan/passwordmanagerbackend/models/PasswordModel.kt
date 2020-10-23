@@ -7,11 +7,11 @@ import javax.persistence.*
 class PasswordModel(
         @GeneratedValue(strategy = GenerationType.AUTO)
         @Id
-        var id: Long,
+        var id: Long?,
 
-       var username: String,
-       var password: String,
-       var url: String
-) {
-        constructor(username: String, password: String, url: String) : this(-1, username, password, url)
-}
+        var ownerUsername: String?,
+
+       var username: String?,
+       var password: String?,
+       var url: String?
+)

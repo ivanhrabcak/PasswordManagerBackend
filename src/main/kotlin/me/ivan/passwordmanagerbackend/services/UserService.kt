@@ -1,6 +1,5 @@
 package me.ivan.passwordmanagerbackend.services
 
-import me.ivan.passwordmanagerbackend.models.UserModel
 import me.ivan.passwordmanagerbackend.repositories.UserRepository
 import org.springframework.stereotype.Service
 

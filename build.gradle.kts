@@ -23,6 +23,8 @@ dependencies {
 	implementation("org.postgresql:postgresql")
 	implementation("com.github.PhilJay:JWT:1.1.5")
 	implementation("com.google.code.gson:gson:2.8.6")
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 //	implementation('com.github.PhilJay:JWT:1.1.5')
 //	implementation("org.postgresql:postgresql")
 //	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
